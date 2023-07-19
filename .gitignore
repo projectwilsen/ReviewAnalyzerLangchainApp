@@ -1,3 +1,8 @@
 .vercel
-.env
 .venv
+.env
+# local env files
+.env*.local
+*env*
+*.pdf
+*.csv
