@@ -9,7 +9,8 @@ from dotenv import load_dotenv, find_dotenv
 load_dotenv()
 
 load_dotenv(find_dotenv())
-HUGGINGFACEHUB_API_TOKEN = os.environ["huggingfacehub_api_token"]
+HUGGINGFACEHUB_API_TOKEN = os.getenv("huggingfacehub_api_token")
+
 
 repo_id = "tiiuae/falcon-7b-instruct"  
 falcon_llm = HuggingFaceHub(
